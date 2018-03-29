@@ -33,8 +33,6 @@ const store = {
           return {
             name: item.gsx$name.$t,
             class: item.gsx$class.$t,
-            type: item.gsx$type.$t,
-            subtype: item.gsx$subtype.$t,
             banner: item.gsx$banner.$t,
           }
         })

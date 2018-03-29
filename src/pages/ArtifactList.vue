@@ -7,7 +7,6 @@
     <template slot="items" slot-scope="data">
       <td>{{data.item.name}}</td>
       <td>{{data.item.class}}</td>
-      <td>{{data.item.type}}</td>
       <td>{{data.item.rarity}}</td>
     </template>
   </v-data-table>
@@ -22,7 +21,6 @@ export default {
       headers: [
         {text: 'Name', sortable: true, value: 'name'},
         {text: 'Class', sortable: true, value: 'class'},
-        {text: 'Type', sortable: true, value: 'type'},
         {text: 'Rarity', sortable: true, value: 'rarity'}
       ]
     }

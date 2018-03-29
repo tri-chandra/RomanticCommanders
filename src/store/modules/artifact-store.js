@@ -33,7 +33,6 @@ const store = {
           return {
             name: item.gsx$name.$t,
             class: item.gsx$class.$t,
-            type: item.gsx$type.$t,
             rarity: item.gsx$rarity.$t
           }
         })
