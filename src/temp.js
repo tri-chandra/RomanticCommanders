@@ -1,4 +1,3 @@
-
 const ArtifactMeta = {
   weapon: {
     staff: {
@@ -24,12 +23,25 @@ const artifacts = [
   }
 ]
 
-//equippables could be derived from ArtifactMeta
+const CommanderTypeMeta = {
+  tactician: [
+    {
+      skill1: 'enhance fire',
+      skill2: 'enhance fire',
+      skill3: 'enhance fire',
+    }
+  ]
+}
+
+//equippables could be derived from ArtifactMeta, skill could be derived from CommanderTypeMeta
 const CommanderMeta = {
   warlord: {
     equippableWeapon: [],
     equippableArmor: [],
     equippableAccessory: [],
+    skill1: '',
+    skill2: '',
+    skill3: '',
     subclasses: {
       aspirant: {
         progression: ['aspirant', 'adventurer'],
