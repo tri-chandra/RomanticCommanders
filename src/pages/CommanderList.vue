@@ -1,5 +1,13 @@
 <template>
 <div>
+  <p>Search By:</p>
+  <ul>
+    <li>Skill</li>
+    <li>Class</li>
+    <li>Weapon Type</li>
+    <li>Cost</li>
+    <li>Terrain Advantage</li>
+  </ul>
   <v-data-table
     :headers="headers"
     :items="items"

@@ -331,7 +331,7 @@ const store = {
         skill5: ''
       },
       [e.sage]: {
-        stages: ['Hermit', 'Disciple', 'Scholar', 'Diviner', '?'],
+        stages: ['Hermit', 'Disciple', 'Scholar', 'Diviner', 'Celestial'],
         weapon: e.fan,
         armor: e.robe1,
         accessory: e.any,
