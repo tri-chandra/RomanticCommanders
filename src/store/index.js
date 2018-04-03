@@ -4,6 +4,7 @@ import axios from 'axios'
 
 import commanderStore from './modules/commander-store'
 import artifactStore from './modules/artifact-store'
+import skillStore from './modules/skill-store'
 import metaStore from './modules/meta-store'
 
 Vue.use(Vuex)
@@ -30,7 +31,9 @@ const store = new Vuex.Store({
     init({ dispatch, commit, state }) {
       dispatch('initCommanderStore').then(() => {
         dispatch('initArtifactStore').then(()=> {
-          commit('setToReady')
+          dispatch('initSkillStore').then(() => {
+            commit('setToReady')
+          })
         })
       })
     }
@@ -39,6 +42,7 @@ const store = new Vuex.Store({
   modules: {
     commanderStore,
     artifactStore,
+    skillStore,
     metaStore
   }
 })

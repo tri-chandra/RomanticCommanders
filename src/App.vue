@@ -46,10 +46,16 @@ export default {
         icon: 'group',
         title: 'Commanders',
         to: '/commanders'
-      }, {
+      },
+      {
         icon: 'colorize',
         title: 'Artifacts',
         to: '/artifacts'
+      },
+      {
+        icon: 'flash_on',
+        title: 'Skills',
+        to: '/skills'
       }],
       title: 'Romantic Commanders'
     }

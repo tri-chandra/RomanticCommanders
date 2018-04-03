@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Sandbox from '@/pages/Sandbox'
 import CommanderList from '@/pages/CommanderList'
 import ArtifactList from '@/pages/ArtifactList'
+import skillList from '@/pages/skillList'
 
 Vue.use(Router)
 
@@ -19,6 +20,12 @@ export default new Router({
       path: '/artifacts',
       name: 'Artifacts',
       component: ArtifactList
+    },
+    {
+      alias: '',
+      path: '/skills',
+      name: 'Skills',
+      component: skillList
     }
   ]
 })
