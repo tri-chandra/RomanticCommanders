@@ -286,7 +286,7 @@ const store = {
         skill5: ''
       },
       [e.chariot]: {
-        stages: ['Light Chariot', 'Heavy Chariot', '?', '?', '?'],
+        stages: ['Light Chariot', 'Heavy Chariot', 'Bladed Chariot', '?', '?'],
         weapon: e.spear,
         armor: e.armor,
         accessory: e.any,
