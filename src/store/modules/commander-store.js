@@ -26,7 +26,7 @@ const store = {
   },
 
   actions: {
-    initCommanderStore({ state, commit }) {
+    initCommanderStore({ state, commit, rootGetters }) {
       axios.get(state.requestUrl).then((response) => {
         const payload = response.data
         const dataset = payload.feed.entry.map((item) => {
@@ -34,6 +34,7 @@ const store = {
             name: item.gsx$name.$t,
             class: item.gsx$class.$t,
             banner: item.gsx$banner.$t,
+            meta: rootGetters.commanderMeta(item.gsx$class.$t),
           }
         })
 
