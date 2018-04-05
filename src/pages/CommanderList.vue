@@ -28,6 +28,7 @@
         <p>{{selectedCommander.name}}</p>
         <p>{{selectedCommander.class}}</p>
         <p>{{selectedCommander.banner}}</p>
+        <p>{{selectedCommander.meta && selectedCommander.meta.stages}}</p>
       </v-card-text>
       <v-card-actions>
         <v-spacer></v-spacer>

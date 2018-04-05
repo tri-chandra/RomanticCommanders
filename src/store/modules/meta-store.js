@@ -148,7 +148,22 @@ const store = {
         accessory: e.any,
         skill1: '',
         skill3: '',
-        skill5: ''
+        skill5: '',
+        terrain: {
+          flat: 100,
+          grass: 100,
+          forest1: 100,
+          wasteland: 100,
+          desert: 100,
+          snow: 100,
+          ice: 100,
+          forest2: 100,
+          mountain: 100,
+          water: 100,
+          wetland: 100,
+          bridge: 100,
+          house: 100
+        }
       },
       [e.footman]: {
         stages: ['Conscript', 'Guardsman', 'Defender', '?', '?'],
@@ -168,7 +183,7 @@ const store = {
         skill3: '',
         skill5: ''
       },
-      [e.crossbow]: {
+      [e.crossbowman]: {
         stages: ['Arbalist', 'Quarreller', 'Sniper', '?', '?'],
         weapon: e.crossbow,
         armor: e.robe2,
