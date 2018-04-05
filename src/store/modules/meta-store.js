@@ -39,7 +39,26 @@ const e = {
   robe1: 'robe1',
   robe2: 'robe2',
 
-  any: 'any'
+  any: 'any',
+
+  plains: 'plains',
+  grassland: 'grassland',
+  forest: 'forest',
+  forestSnow: 'forestSnow',
+  stockpile: 'stockpile',
+  courtyard: 'courtyard',
+  treasury: 'treasury',
+  barracks: 'barracks',
+  fortress: 'fortress',
+  fort: 'fort',
+  town: 'town',
+  baguaStone: 'baguaStone',
+  house: 'house',
+  wasteland: 'wasteland',
+  bridge: 'bridge',
+  mountain: 'mountain',
+  mountainPass: 'mountainPass',
+  snowyField: 'snowyField'
 }
 
 const mapper = {
@@ -83,7 +102,131 @@ const mapper = {
   robe1: 'Robe',
   robe2: 'Robe',
 
-  any: 'Common'
+  any: 'Common',
+
+  plains: 'Plains',
+  grassland: 'Grassland',
+  forest: 'Forest',
+  forestSnow: 'Forest (snow)',
+  stockpile: 'Stockpile',
+  courtyard: 'Courtyard',
+  treasury: 'Treasury',
+  barracks: 'Barracks',
+  fortress: 'Fortress',
+  fort: 'Fort',
+  town: 'Town',
+  baguaStone: 'Bagua Stone',
+  house: 'House',
+  wasteland: 'Wasteland',
+  bridge: 'Bridge',
+  mountain: 'Mountain',
+  mountainPass: 'Mountain Pass',
+  snowyField: 'Snowy Field'
+}
+
+const terrain = {
+  [e.plains]: {
+    healthRegen: 0,
+    manaRegen: 0,
+    tactics: {
+      fire: false,
+      water: false,
+      earth: false,
+      wind: false
+    },
+    [e.warlord]: {
+      damage: 100,
+      cost: 1
+    },
+    [e.footman]: {
+      damage: 100,
+      cost: 1
+    },
+    [e.archer]: {
+      damage: 100,
+      cost: 1
+    },
+    [e.crossbowman]: {
+      damage: 100,
+      cost: 1
+    },
+    [e.spearman]: {
+      damage: 100,
+      cost: 1
+    },
+    [e.lightCavalry]: {
+      damage: 100,
+      cost: 1
+    },
+    [e.heavyCavalry]: {
+      damage: 100,
+      cost: 1
+    },
+    [e.mountainCavalry]: {
+      damage: 100,
+      cost: 1
+    },
+    [e.mountedArcher]: {
+      damage: 100,
+      cost: 1
+    },
+    [e.catapult]: {
+      damage: 100,
+      cost: 1
+    },
+    [e.soldier]: {
+      damage: 100,
+      cost: 1
+    },
+    [e.outlaw]: {
+      damage: 100,
+      cost: 1
+    },
+    [e.tactician]: {
+      damage: 100,
+      cost: 1
+    },
+    [e.geomancer]: {
+      damage: 100,
+      cost: 1
+    },
+    [e.taoist]: {
+      damage: 100,
+      cost: 1
+    },
+    [e.dancer]: {
+      damage: 100,
+      cost: 1
+    },
+    [e.chariot]: {
+      damage: 100,
+      cost: 1
+    },
+    [e.navy]: {
+      damage: 100,
+      cost: 1
+    },
+    [e.bearMaster]: {
+      damage: 100,
+      cost: 1
+    },
+    [e.tigerMaster]: {
+      damage: 100,
+      cost: 1
+    },
+    [e.marine]: {
+      damage: 100,
+      cost: 1
+    },
+    [e.sage]: {
+      damage: 100,
+      cost: 1
+    },
+    [e.demon]: {
+      damage: 100,
+      cost: 1
+    }
+  }
 }
 
 const store = {
@@ -148,22 +291,7 @@ const store = {
         accessory: e.any,
         skill1: '',
         skill3: '',
-        skill5: '',
-        terrain: {
-          flat: 100,
-          grass: 100,
-          forest1: 100,
-          wasteland: 100,
-          desert: 100,
-          snow: 100,
-          ice: 100,
-          forest2: 100,
-          mountain: 100,
-          water: 100,
-          wetland: 100,
-          bridge: 100,
-          house: 100
-        }
+        skill5: ''
       },
       [e.footman]: {
         stages: ['Conscript', 'Guardsman', 'Defender', '?', '?'],
