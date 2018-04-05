@@ -168,7 +168,7 @@ const store = {
         skill3: '',
         skill5: ''
       },
-      [e.crossbow]: {
+      [e.crossbowman]: {
         stages: ['Arbalist', 'Quarreller', 'Sniper', '?', '?'],
         weapon: e.crossbow,
         armor: e.robe2,
