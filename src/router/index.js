@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Sandbox from '@/pages/Sandbox'
 import CommanderList from '@/pages/CommanderList'
 import ArtifactList from '@/pages/ArtifactList'
-import skillList from '@/pages/skillList'
+import skillList from '@/pages/SkillList'
 
 Vue.use(Router)
 
