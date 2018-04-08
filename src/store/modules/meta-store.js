@@ -17,8 +17,8 @@ const e = {
   dancer: 'dancer',
   chariot: 'chariot',
   navy: 'navy',
-  bearMaster: 'bearMaster',
-  tigerMaster: 'tigerMaster',
+  ursari: 'ursari',
+  pantheran: 'pantheran',
   marine: 'marine',
   sage: 'sage',
   demon: 'demon',
@@ -80,8 +80,8 @@ const mapper = {
   dancer: 'Dancer',
   chariot: 'Chariot',
   navy: 'Navy',
-  bearMaster: 'Bear Master',
-  tigerMaster: 'Tiger Master',
+  ursari: 'Ursari',
+  pantheran: 'Pantheran',
   marine: 'Marine',
   sage: 'Sage',
   demon: 'Demon',
@@ -206,11 +206,11 @@ const terrain = {
       damage: 100,
       cost: 1
     },
-    [e.bearMaster]: {
+    [e.ursari]: {
       damage: 100,
       cost: 1
     },
-    [e.tigerMaster]: {
+    [e.pantheran]: {
       damage: 100,
       cost: 1
     },
@@ -248,7 +248,7 @@ const store = {
           equippableBy: [e.crossbowman]
         },
         [e.staff]: {
-          equippableBy: [e.soldier, e.dancer, e.bearMaster, e.tigerMaster]
+          equippableBy: [e.soldier, e.dancer, e.ursari, e.pantheran]
         },
         [e.artillery]: {
           equippableBy: [e.catapult]
@@ -269,7 +269,7 @@ const store = {
         },
         robe2: {
           equippableBy: [e.archer, e.crossbowman, e.lightCavalry, e.mountainCavalry, e.catapult,
-            e.soldier, e.outlaw, e.dancer, e.navy, e.bearMaster, e.tigerMaster, e.marine, e.swordsman, e.musician]
+            e.soldier, e.outlaw, e.dancer, e.navy, e.ursari, e.pantheran, e.marine, e.swordsman, e.musician]
         }
       },
       accessory: {
@@ -278,7 +278,7 @@ const store = {
             e.warlord, e.footman, e.spearman, e.heavyCavalry, e.mountedArcher, e.chariot,
             e.tactician, e.geomancer, e.taoist, e.sage, e.demon,
             e.archer, e.crossbowman, e.lightCavalry, e.mountainCavalry, e.catapult,
-            e.soldier, e.outlaw, e.dancer, e.navy, e.bearMaster, e.tigerMaster, e.marine, e.swordsman, e.musician
+            e.soldier, e.outlaw, e.dancer, e.navy, e.ursari, e.pantheran, e.marine, e.swordsman, e.musician
           ]
         }
       }
@@ -446,7 +446,7 @@ const store = {
         skill3: '',
         skill5: ''
       },
-      [e.bearMaster]: {
+      [e.ursari]: {
         stages: ['Cub', 'Brown', 'Grizzly', '?', '?'],
         weapon: e.staff,
         armor: e.robe2,
@@ -455,7 +455,7 @@ const store = {
         skill3: '',
         skill5: ''
       },
-      [e.tigerMaster]: {
+      [e.pantheran]: {
         stages: ['Clouded', 'Caspian', 'Javan', '?', '?'],
         weapon: e.staff,
         armor: e.robe2,
