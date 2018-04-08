@@ -285,7 +285,7 @@ const store = {
     },
     commanderMeta: {
       [e.warlord]: {
-        stages: ['Aspirant', 'Adventurer', 'Challenger', 'Conqueror', '?'],
+        stages: ['Aspirant', 'Adventurer', 'Challenger', 'Conqueror', 'Hero'],
         weapon: e.sword,
         armor: e.armor,
         accessory: e.any,
@@ -348,7 +348,7 @@ const store = {
         skill5: ''
       },
       [e.mountainCavalry]: {
-        stages: ['Ranger', 'Rough Rider', 'Cliff Bounder', 'Stonehoof', '?'],
+        stages: ['Ranger', 'Rough Rider', 'Cliff Bounder', 'Stonehoof', 'Mountainstrider'],
         weapon: e.spear,
         armor: e.robe2,
         accessory: e.any,
@@ -420,7 +420,7 @@ const store = {
         skill5: ''
       },
       [e.dancer]: {
-        stages: ['Performer', 'Bard', 'Enchantress', 'Songstress', '?'],
+        stages: ['Performer', 'Bard', 'Enchantress', 'Songstress', 'Siren'],
         weapon: e.staff,
         armor: e.robe2,
         accessory: e.any,
