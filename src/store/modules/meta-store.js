@@ -366,7 +366,7 @@ const store = {
         skill5: ''
       },
       [e.catapult]: {
-        stages: ['Light Catapult', 'Heavy Catapult', '?', '?', '?'],
+        stages: ['Light Catapult', 'Heavy Catapult', 'Fire Catapult', '?', '?'],
         weapon: e.artillery,
         armor: e.robe2,
         accessory: e.any,
