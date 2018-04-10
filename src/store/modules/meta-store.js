@@ -411,7 +411,7 @@ const store = {
         skill5: ''
       },
       [e.taoist]: {
-        stages: ['Devotee', 'Initiate', 'Monk', '?', '?'],
+        stages: ['Devotee', 'Initiate', 'Monk', 'Enlightened', '?'],
         weapon: e.legendarySword,
         armor: e.robe1,
         accessory: e.any,
@@ -465,7 +465,7 @@ const store = {
         skill5: ''
       },
       [e.marine]: {
-        stages: ['Raider', 'Buccaneer', 'Marauder', '?', '?'],
+        stages: ['Raider', 'Buccaneer', 'Marauder', 'Corsair', '?'],
         weapon: e.legendarySword,
         armor: e.robe2,
         accessory: e.any,
